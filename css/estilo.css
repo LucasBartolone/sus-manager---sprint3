@@ -1,0 +1,157 @@
+body
+{
+    margin: 50px 0;
+    
+}
+
+.cabecera
+{
+    padding: 20px;
+    background-color: rgb(48, 48, 133);
+    opacity: 0.8;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: aquamarine;
+    justify-items: center;
+    font-weight: bold;
+}
+
+nav{
+    border-radius: 5px;
+}
+
+
+.cuerpo
+{
+    background-color: rgb(177, 173, 173);
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+section
+{
+    display: inline-flex;
+    background-image: url(fondo.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#icono
+{
+    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: small;
+    margin: 10px;
+    
+    background:-webkit-gradient(radial, 165 0, 0, -44 -57, 465, from(#53afd4), to(#dbcc00));
+    box-shadow:10px 10px 5px #000000;
+    
+    
+}
+#icono1
+{
+    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: small;
+    margin: 10px;
+    background-color:skyblue;
+}
+
+.pie
+{
+    color:cornsilk;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(13, 7, 63);
+    opacity: 0.8;
+    font-size: smaller;
+    
+}
+
+div
+{
+    
+    word-wrap: break-word;
+}
+
+@media(min-width: 480px)
+{
+    div
+    {
+        max-width: 475px;
+    }
+    
+    
+}
+
+@media(min-width: 500px)
+{
+    div
+    {
+        max-width: 480px;
+    }
+    .cuerpo
+    {
+        font-size: 10px;
+    }
+    .menu
+    {
+        font-size: small;
+    }
+    
+}
+
+@media(min-width: 576px)
+{
+    div
+    {
+        max-width: 540px;
+    }
+    .cuerpo
+    {
+        font-size: 12px;
+    }
+    
+}
+
+@media(min-width: 768px)
+{
+    div
+    {
+        max-width: 650px;
+    }
+    .cuerpo
+    {
+        font-size: 15px;
+    }
+    
+}
+
+@media(min-width: 992px)
+{
+    div
+    {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px)
+{
+    div
+    {
+        max-width: 1140px;
+    }
+}

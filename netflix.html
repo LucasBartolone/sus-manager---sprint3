@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta pagina, podra configurar su suscripcion de Netflix">
+    <meta name="keywords" content="suscripcion, manager, plataforma, Netflix, información">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>S.U.S Manager - Netflix</title>
+    
+</head>
+
+<body>
+    <section class="container">
+        <div class="cabecera">
+            <div class="row">
+                <div class="col-12">
+                    <p></p>
+                </div>
+                <div class="col-9">
+                    <h1>S.U.S Manager</h1>
+                    <h2>Administrador de Suscripciones</h2>
+                </div>
+                <div class="col-3">
+                <figure>
+                    <img src="css/logo.png" class="img-fluid">
+                </figure>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="cuerpo">
+            <div class="row">
+                <div class="col-8">
+                    <div id="icono">
+                        <p>
+                            <a target="_blanck" href="https://www.netflix.com/ar/">
+                            <figure>
+                                <img src="iconos/netflix.png" width="20%">
+                                <figcaption>Ir a la página oficial de la suscripción</figcaption>
+                            </figure>
+                            </a>
+    
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class=menu>
+                        <div class="menu">
+                            <nav class="navbar navbar-light bg-light">
+                                <a href="sesion.html">Cerrar Sesión</a>
+                            </nav>
+
+                            <nav class="navbar navbar-light bg-light">
+                                <a href="plataforma.html">Volver</a>
+                            </nav>
+                            
+                            <nav class="navbar navbar-light bg-light">
+                                <a href="index.html">Salir</a>
+                            </nav>
+
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="col-8">
+                    <div id="icono">
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#configuracion" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Configuración</a>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                              <div class="collapse multi-collapse" id="configuracion">
+                                <div class="card card-body">
+                                    <div>
+                                        <h4><span class="badge badge-secondary">Importe</br> Mensual</span></h4>
+                                        <p>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">$</span>
+                                                </div>
+                
+                                                <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                
+                                            </div>
+                                        </p>
+                
+                                        <button type="button" class="btn btn-light">Modificar</button>
+                                        
+                                    </div>
+
+                                    <div>
+                                        <h4><span class="badge badge-secondary">Período de </br> Facturación</span></h4>
+                                        <p>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Cada 20 días</option>
+                                                <option value="2">Cada 30 días</option>
+                                                
+                                            </select>
+                                        </p>
+                                        <button type="button" class="btn btn-light">Modificar</button>
+                        
+                                    </div>
+
+                                    <div>
+                                        <h4><span class="badge badge-secondary">Activar </br> Alertas</span></h4>
+                                        <p>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Choose...</option>
+                                                <option value="1">Si</option>
+                                                <option value="2">No</option>
+                                                
+                                              </select>
+                                        </p>
+                                            <button type="button" class="btn btn-light">Modificar</button>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--hacemos un collapse de informacion-->
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#informacion" role="button" aria-expanded="false" aria-controls="informacion">Información</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="informacion">
+                                    <div class="card card-body">
+                                        <div>
+                                            <h4><span class="badge badge-secondary">Importe</br> Mensual</span></h4>
+                                            <p>
+                                                <span class="badge badge-primary">$ 000,00</span>
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <h4><span class="badge badge-secondary">Período de </br> Facturación</span></h4>
+                                            <p>
+                                                <span class="badge badge-primary">$ 30 días</span>
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <h4><span class="badge badge-secondary">Alertas</span></h4>
+                                            <p>
+                                                <span class="badge badge-primary">$ Activas</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+
+                            <!--hacemos un collapse de eliminar-->
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#eliminar" role="button" aria-expanded="false" aria-controls="eliminar--">Eliminar</a>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="eliminar">
+                                    <div class="card card-body">
+                                        <div class="alert alert-danger" role="alert">
+                                            Si usted elimina esta Suscripcion ya no podrá administrarla con S.U.S Manager Administrator
+                                        </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </div>
+
+        <footer>
+            <div class="pie">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            Todos los derechos reservados
+                        </p>
+                        
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            I.S.P.C:
+                        <br>
+                            Instituto Superior Politecnico de Córdoba
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            PROYECTO DE PRACTICA PROFESIONALIZANTE
+                        <br>
+                            En Coordinación con PROGRAMACIÓN WEB
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+                
+    </section>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+    
+</body>
+</html>

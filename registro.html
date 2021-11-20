@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta pagina, podra ingresar sus datos para acceder a las funciones del gestor">
+    <meta name="keywords" content="suscripcion, manager, datos, usuario, contraseña">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>S.U.S Manager - Registro</title>
+    
+</head>
+
+<body>
+    <section class="container">
+        <div class="cabecera">
+            <div class="row">
+
+                <div class="col-12">
+                    <p></p>
+                </div>
+                <div class="col-9">
+                    <h1>S.U.S Manager</h1>
+                    <h2>Administrador de Suscripciones</h2>
+                </div>
+                <div class="col-3">
+                    <figure>
+                        <img src="css/logo.png" class="img-fluid">        
+                    </figure>
+                </div>
+                
+            </div>
+        </div>
+            
+        <div class="cuerpo">
+            <div class="row">
+                <div class="col-8">
+                    <form onsubmit="return validar()" action="registroCBD.php" method="post">
+                        <div class="form-row" >
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer01">Nombre</label>
+                            <input type="text" class="form-control is-valid" id="nombre" placeholder="Nombre" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Apellido</label>
+                            <input type="text" class="form-control is-valid" id="apellido" placeholder="Apellido" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Telefono</label>
+                            <input type="number" class="form-control is-valid" id="telefono" placeholder="(Cod Area) Nro.Telefono" value="Telefono" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">E-Mail</label>
+                            <input type="email" class="form-control is-valid" id="email" placeholder="name@example.com" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="fechaNacimiento">Fecha Nacimiento</label>
+                            <input type="date" class="form-control is-valid" id="fechaNacimiento" placeholder="date" value="date" required>
+                            <h6 id="edad"></h6>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServerUsername">Ingrese un nombre de usuario</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                              </div>
+                                <input type="text" class="form-control is-valid" id="nombreUsuario" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServerPassword">Ingrese una contraseña</label>
+                            <input type="password" class="form-control is-valid" id="contraseña" placeholder="password" required>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                              Aceptar terminos y condiciones.
+                            </label>
+                            <div class="invalid-feedback">
+                              Por favor acepte los términos y condiciones para poder continuar.
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit" onclick="redireccion()">Enviar</button>
+                      </form>
+                </div>
+
+                <div class="col-4">
+                    <div class="menu">
+                        <nav class="navbar navbar-light bg-light">
+                            <a href="index.html">Inicio</a>
+                        </nav>
+                        
+                        <nav class="navbar navbar-light bg-light">
+                            <a href="sesion.html">Iniciar Sesion</a>
+                        </nav>
+                        
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        <footer>
+            <div class="pie">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            Todos los derechos reservados
+                        </p>
+                        
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            I.S.P.C:
+                        <br>
+                            Instituto Superior Politecnico de Córdoba
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            PROYECTO DE PRACTICA PROFESIONALIZANTE
+                        <br>
+                            En Coordinación con PROGRAMACIÓN WEB
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <u><a href="sesion.html">Iniciar sesión</a></u>  
+                        <u><a href="registro.html"> Registrarse </a></u>
+                        <u><a href="contacto.html"> Contacto </a></u>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script src="funcionesgrupo99.js"></script>
+</body>
+</html>

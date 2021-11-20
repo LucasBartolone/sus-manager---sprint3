@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta pagina, encontrara las plataformas disponibles en el gestor">
+    <meta name="keywords" content="suscripcion, manager, plataforma, busqueda, oredenar">
+    <title>Plataformas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap 4</title>
+    
+</head>
+
+<body>
+    <section class="container">
+        <div class="cabecera">
+            <div class="row">
+                <div class="col-12">
+                    <p></p>
+                </div>
+
+                <div class="col-9">
+                    <h1>S.U.S Manager</h1>
+                    <h2>Administrador de Suscripciones</h2>
+                </div>
+
+                <div class="col-3">
+                <figure>
+                    <img src="css/logo.png" class="img-fluid">
+                    
+                </figure>
+                </div>
+            </div>
+        </div>    
+
+        <div class="cuerpo">
+            <div class="row">
+                <div class="col-7">
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p id="color">
+                            <a href="netflix.html">
+                            <figure>
+                                <img src="iconos/netflix.png" width="20%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="netflix.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="menu">
+                        <nav class="navbar navbar-light bg-light">
+                            <a id="color" onmouseover="cambiarColor()" onmouseout="volverColor()" href="sesion.html">Cerrar Sesión </a>
+                        </nav>
+                        
+                        <nav class="navbar navbar-light bg-light">
+                            <a href="index.html">Salir</a>
+                        </nav>   
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p>
+                            <a href="paramount.html">
+                            <figure>
+                                <img src="iconos/paramount.png" width="20%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="paramount.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+                    
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p>
+                            <a href="hbo.html">
+                            <figure>
+                                <img src="iconos/hbo.jpg" width="30%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="hbo.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p>
+                            <a href="disney.html">
+                            <figure>
+                                <img src="iconos/disney.png" width="20%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="disney.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p>
+                            <a href="spotify.html">
+                            <figure>
+                                <img src="iconos/spotify.png" width="20%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="spotify.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+
+                    <div class="evento" onmouseover="cambiarColor(this, color)" onmouseout="volverColor(this, color)" id="icono1">
+                        <p>
+                            <a href="youtube.html">
+                            <figure>
+                                <img src="iconos/youtube.png" width="30%">
+                                
+                            </figure>
+                            </a>
+                            <span class="badge badge-pill badge-light"><a href="youtube.html">Ir a la suscripción</a></span>
+                        </p>
+                    </div>
+                </div>        
+                <div class="col-4">
+                
+                    <!--Le permitira al usuario buscar una aplicacion en el caso que las que estan añadidas por default no sean suficientes o no estél la aplicacion que el usuario quiera administrar-->
+                    <div id="icono">
+                        <h6>
+                            Buscador de aplicaciones
+                        </h6>
+
+                        <form class="form-inline-flex">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Ingrese aquí" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+                                
+                    </div>
+
+                    <div id="icono">
+                        <p>
+                            El total de sus suscripciones asciende a: $
+                        </p>
+                    </div>
+
+                    <!--Le permitira al usuario ordenar alfabéticamente - en orden por mayor - menor importe la disposición visual de las aplicaciones-->
+                    <div id="icono">
+                        <p>
+                            <button type="button" class="btn btn-info">Orden<br>Alfabético</button>
+                        </p>
+                        
+                        <p>
+                            <button type="button" class="btn btn-info">Menor<br>Importe</button>
+                        </p>
+    
+                        <p>
+                            <button type="button" class="btn btn-info">Mayor<br>Importe</button>
+                        </p>
+                    </div>
+
+                </div>
+            </div>        
+        </div>    
+        <footer>
+            <div class="pie">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            Todos los derechos reservados
+                        </p>
+                        
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            I.S.P.C:
+                        <br>
+                            Instituto Superior Politecnico de Córdoba
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            PROYECTO DE PRACTICA PROFESIONALIZANTE
+                        <br>
+                            En Coordinación con PROGRAMACIÓN WEB
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>              
+    </section>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+        <script src="funcionesgrupo99.js"></script>
+</body>
+</html>
